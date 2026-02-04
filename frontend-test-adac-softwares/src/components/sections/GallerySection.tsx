@@ -1,25 +1,75 @@
+import Image from "next/image";
+
 export default function GallerySection() {
+  const galleryImages = {
+    row1: [
+      { src: "/images/gallery/drone.png", alt: "Drone view" },
+      { src: "/images/gallery/tablet.png", alt: "Tablet on blue" },
+      { src: "/images/gallery/office.png", alt: "Office workspace" },
+      { src: "/images/gallery/workspace.png", alt: "Do more workspace" },
+    ],
+    row2: [
+      { src: "/images/gallery/code.png", alt: "Code on laptop", large: true },
+      { src: "/images/gallery/design.png", alt: "Design tools" },
+      { src: "/images/gallery/camera.png", alt: "Camera lens" },
+    ],
+  };
+
   return (
-    <section className="w-full py-20 border-t border-white/10">
+    <section className="w-full py-20 bg-[#181818]">
       <div className="mx-auto max-w-7xl px-6">
+        {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Gallery</h2>
-          <p className="text-gray-400 text-base max-w-2xl mx-auto mb-8">
-            We focus on ergonomics and meeting you where you work. It&apos;s only a
-            keystroke away.
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">Gallery</h2>
+          <p className="text-gray-400 text-base max-w-2xl mx-auto">
+            We focus on ergonomics and meeting you where you work.
+            <br />
+            It&apos;s only a keystroke away.
           </p>
         </div>
 
         {/* Gallery Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-          {[1, 2, 3, 4].map((item) => (
-            <div
-              key={item}
-              className="aspect-square bg-gradient-to-br from-blue-600/20 to-purple-600/20 rounded-lg"
-            />
-          ))}
+        <div className="mb-12">
+          {/* Primeira linha - 4 imagens iguais */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
+            {galleryImages.row1.map((image, index) => (
+              <div
+                key={index}
+                className="aspect-square rounded-lg overflow-hidden relative group"
+              >
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-300"
+                />
+              </div>
+            ))}
+          </div>
+
+          {/* Segunda linha - 3 imagens */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {galleryImages.row2.map((image, index) => (
+              <div
+                key={index}
+                className={`rounded-lg overflow-hidden relative group ${
+                  image.large
+                    ? "aspect-square md:aspect-[2/1] md:col-span-2"
+                    : "aspect-square"
+                }`}
+              >
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-300"
+                />
+              </div>
+            ))}
+          </div>
         </div>
 
+        {/* Button */}
         <div className="text-center">
           <button className="px-8 py-3 border border-white/20 hover:bg-white hover:text-black rounded-md font-medium transition-all duration-200">
             See more
