@@ -20,7 +20,7 @@ export default function FeaturesSection() {
   return (
     <section className="w-full py-20 border-t border-white/10">
       <div className="mx-auto max-w-7xl px-6">
-        {/* Section Header */}
+        {/* Section Header: para que é o serviço */}
         <div className="text-center mb-16">
           <h2 className="text-sm font-semibold text-gray-400 mb-4 uppercase tracking-wider">
             FEATURES
@@ -31,11 +31,11 @@ export default function FeaturesSection() {
           </p>
         </div>
 
-        {/* Features Grid */}
+        {/* Features Grid: cada item do serviço*/}
         <div className="grid md:grid-cols-3 gap-8 md:gap-12">
           {features.map((feature, index) => (
             <div key={index} className="text-center">
-              {/* Icon Placeholder */}
+              {/* Icon Placeholder : selecionar um icon depois*/}
               <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg" />
               
               <h3 className="text-xl font-semibold mb-4">{feature.title}</h3>

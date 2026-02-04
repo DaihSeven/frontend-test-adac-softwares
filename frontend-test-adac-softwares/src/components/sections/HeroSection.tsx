@@ -3,7 +3,7 @@ export default function HeroSection() {
     <section className="relative w-full overflow-hidden py-20 md:py-32">
       <div className="mx-auto max-w-7xl px-6">
         <div className="text-center">
-          {/* Main Heading */}
+          {/* Main Heading : texto principal*/}
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
             Work at the
             <br />
@@ -12,7 +12,7 @@ export default function HeroSection() {
             thought
           </h1>
 
-          {/* Subtitle */}
+          {/* Subtitulo */}
           <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto mb-10">
             Most calendars are designed for teams. Slate is designed for
             freelancers who want a simple way to plan their schedule.
