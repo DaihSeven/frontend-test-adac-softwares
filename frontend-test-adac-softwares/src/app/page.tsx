@@ -5,7 +5,9 @@ import HeroSection from "@/components/sections/HeroSection";
 import FeaturesSection from "@/components/sections/FeaturesSection";
 import ContentsSection from "@/components/sections/ContentsSection";
 import GallerySection from "@/components/sections/GallerySection";
-
+import PartnerSection from "@/components/sections/PartnerSection";
+import TestmonialsSection from "@/components/sections/TestmonialsSection";
+import CTASection from "@/components/sections/CtaSection";
 export default function Home() {
   return (
     <>
@@ -15,6 +17,9 @@ export default function Home() {
         <FeaturesSection/>
         <ContentsSection/>
         <GallerySection/>
+        <PartnerSection/>
+        <TestmonialsSection/>
+        <CTASection/>
       </main>
       <Footer />
     </>

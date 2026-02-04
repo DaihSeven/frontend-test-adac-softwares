@@ -7,7 +7,7 @@ export default function ContentsSection() {
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Contents</h2>
             <p className="text-gray-400 text-base leading-relaxed mb-8">
-              We focus on ergonomics and meeting you where you work. It's only a
+              We focus on ergonomics and meeting you where you work. It&apos;s only a
               keystroke away.
             </p>
             
@@ -20,7 +20,7 @@ export default function ContentsSection() {
                 <div>
                   <h4 className="font-semibold mb-1">Work</h4>
                   <p className="text-sm text-gray-400">
-                    Ever wondered if you're too reliant on a client for work? Slate
+                    Ever wondered if you&apos;re too reliant on a client for work? Slate
                     helps you identify.
                   </p>
                 </div>
@@ -33,7 +33,7 @@ export default function ContentsSection() {
                 <div>
                   <h4 className="font-semibold mb-1">Design with real data</h4>
                   <p className="text-sm text-gray-400">
-                    Ever wondered if you're too reliant on a client for work? Slate
+                    Ever wondered if you&apos;re too reliant on a client for work? Slate
                     helps you identify.
                   </p>
                 </div>
