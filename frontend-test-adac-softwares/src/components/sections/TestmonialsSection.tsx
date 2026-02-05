@@ -33,17 +33,15 @@ const testimonials = [
 
 export default function TestimonialsSection() {
   return (
-    <section className="w-full py-28 bg-[#1a1a1a]">
+    <section className="w-full py-28 bg-[#181818]">
       <div className="mx-auto max-w-7xl px-6">
 
-        {/* Header */}
         <div className="text-center mb-20">
-          <h2 className="text-3xl md:text-4xl font-semibold">
+          <h2 className="text-3xl md:text-5xl ">
             Testimonials
           </h2>
         </div>
 
-        {/* Grid */}
         <div className="grid md:grid-cols-2 gap-y-12 gap-x-10 justify-items-center">
           {testimonials.map((item) => (
             <div
@@ -51,13 +49,13 @@ export default function TestimonialsSection() {
               className="
                 border border-white/20
                 rounded-xl
-                bg-[#111111]
+                bg-[#181818]
                 p-10
                 max-w-md
                 w-full
               "
             >
-              {/* Avatar */}
+
               <div className="flex items-center gap-4 mb-6">
                 <Image
                   src={item.image}
@@ -77,7 +75,6 @@ export default function TestimonialsSection() {
                 </div>
               </div>
 
-              {/* Content */}
               <p className="text-gray-300 text-sm leading-relaxed">
                 {item.content}
               </p>

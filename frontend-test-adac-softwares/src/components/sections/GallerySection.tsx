@@ -18,9 +18,9 @@ export default function GallerySection() {
   return (
     <section className="w-full py-20 bg-[#181818]">
       <div className="mx-auto max-w-7xl px-6">
-        {/* Header */}
+       
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Gallery</h2>
+          <h2 className="text-4xl md:text-5xl mb-4">Gallery</h2>
           <p className="text-gray-400 text-base max-w-2xl mx-auto">
             We focus on ergonomics and meeting you where you work.
             <br />
@@ -28,10 +28,9 @@ export default function GallerySection() {
           </p>
         </div>
 
-        {/* Gallery Grid */}
         <div className="mb-12">
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-4">
             {galleryImages.row1.map((image, index) => (
               <div
                 key={index}
@@ -47,7 +46,7 @@ export default function GallerySection() {
             ))}
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
             {galleryImages.row2.map((image, index) => (
               <div
                 key={index}
@@ -68,9 +67,8 @@ export default function GallerySection() {
           </div>
         </div>
 
-        {/* Button */}
         <div className="text-center">
-          <button className="px-8 py-3 border border-white/20 hover:bg-white hover:text-black rounded-md font-medium transition-all duration-200">
+          <button className="px-8 py-3 border border-white/20 hover:bg-white hover:text-black font-medium transition-all duration-200">
             See more
           </button>
         </div>

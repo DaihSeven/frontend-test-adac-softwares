@@ -17,11 +17,10 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="w-full py-20 bg-[#1a1a1a]">
-      <div className="mx-auto max-w-7xl px-6">
-        <div className="grid md:grid-cols-4 gap-12 items-start">
+    <footer className="w-full py-20 bg-[#181818]">
+      <div className="mx-auto max-w-7xl px-16 sm:px-20 lg:px-24">
+        <div className="grid md:grid-cols-4 gap-20 items-start">
 
-          {/* Links */}
           {footerLinks.map((column, index) => (
             <div key={index}>
               <h3 className="font-semibold mb-6">{column.title}</h3>
@@ -30,7 +29,7 @@ export default function Footer() {
                   <li key={linkIndex}>
                     <a
                       href="#"
-                      className="text-sm text-gray-400 hover:text-white transition-colors"
+                      className="text-sm text-white hover:text-gray-400 transition-colors"
                     >
                       {link}
                     </a>
@@ -40,14 +39,13 @@ export default function Footer() {
             </div>
           ))}
 
-          {/* Contact + Social */}
           <div className="space-y-6">
-            <div className="flex items-start gap-3 text-gray-400 text-sm">
+            <div className="flex items-start gap-3 text-white font-semibold text-sm">
               <MapPin className="w-5 h-5 text-white" />
               <span>7480 Mockingbird Hill undefined</span>
             </div>
 
-            <div className="flex items-start gap-3 text-gray-400 text-sm">
+            <div className="flex items-start gap-3 text-white font-semibold text-sm">
               <Phone className="w-5 h-5 text-white" />
               <span>(239) 555-0108</span>
             </div>

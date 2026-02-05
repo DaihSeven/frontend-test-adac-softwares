@@ -9,15 +9,13 @@ const partners = [
   { name: "IBM", src: "/images/partners/ibm.png" },
 ];
 
-
 export default function PartnersSection() {
   return (
-    <section className="w-full py-28 bg-[#1a1a1a] ">
+    <section className="w-full py-28 bg-[#181818]">
       <div className="mx-auto max-w-7xl px-6">
 
-        {/* Header */}
         <div className="text-center mb-20">
-          <h2 className="text-3xl md:text-4xl font-semibold mb-6">
+          <h2 className="text-3xl md:text-4xl  mb-6">
             Partners
           </h2>
 
@@ -27,23 +25,24 @@ export default function PartnersSection() {
           </p>
         </div>
 
-        {/* Logos */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-y-12 gap-x-8 items-center justify-items-center mb-16">
+        <div className="grid grid-cols-3 lg:grid-cols-6 gap-y-12 gap-x-8 items-center justify-items-center mb-16">
           {partners.map((partner) => (
-            <Image
+            <div
               key={partner.name}
-              src={partner.src}
-              alt={partner.name}
-              width={120}
-              height={40}
-              className="opacity-80 hover:opacity-100 transition-opacity duration-200"
-            />
+              className="relative h-12 w-full max-w-[120px]"
+            >
+              <Image
+                src={partner.src}
+                alt={partner.name}
+                fill
+                className="object-contain opacity-80 hover:opacity-100 transition-opacity duration-200"
+              />
+            </div>
           ))}
         </div>
 
-        {/* CTA */}
         <div className="text-center">
-          <button className="px-8 py-3 border border-white/20 hover:bg-white hover:text-black rounded-md font-medium transition-all duration-200">
+          <button className="px-8 py-3 border border-white/20 hover:bg-white hover:text-black  font-medium transition-all duration-200">
             All Partners
           </button>
         </div>
