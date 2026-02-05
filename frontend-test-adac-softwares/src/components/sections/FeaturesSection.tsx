@@ -43,7 +43,7 @@ export default function FeaturesSection() {
           {/* Imagem */}
           <div className="relative">
             <Image
-              src="/images/features.png" // ajuste o nome se necessário
+              src="/images/features.png" 
               alt="Features dashboard"
               width={700}
               height={500}

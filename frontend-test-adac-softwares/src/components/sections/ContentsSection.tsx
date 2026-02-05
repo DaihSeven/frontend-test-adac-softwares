@@ -26,7 +26,7 @@ export default function ContentsSection() {
               Sign Up
             </button>
             
-            {/* Imagem do laptop - Substitua /images/work-laptop.png pela sua imagem */}
+            {/* Imagem do laptop */}
             <div className="w-full aspect-[16/10] relative">
               <Image
                 src="/images/work-laptop.png"
@@ -37,7 +37,7 @@ export default function ContentsSection() {
             </div>
           </div>
 
-          {/* Card 2 - Design with real data */}
+          {/* Card 2 */}
           <div className="bg-white rounded-lg p-8 flex flex-col items-center text-center">
             <h3 className="text-xl font-bold text-gray-900 mb-4">Design with real data</h3>
             <p className="text-gray-600 text-sm mb-6 max-w-xs">
@@ -47,7 +47,7 @@ export default function ContentsSection() {
               Try For Free
             </button>
             
-            {/* Imagem do dashboard escuro - Substitua /images/design-dashboard.png pela sua imagem */}
+            {/* Imagem do dashboard escuro*/}
             <div className="w-full aspect-[16/10] relative">
               <Image
                 src="/images/design-dashboard.png"

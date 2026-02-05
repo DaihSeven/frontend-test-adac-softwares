@@ -8,12 +8,12 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="w-full border-b border-white/10">
+    <header className="w-full">
       <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <span className="text-xl font-bold">Fingertipe</span>
 
-        {/* Desktop menu - ATENÇÃO: gap-8 adiciona espaçamento */}
+        {/* Desktop menu  */}
         <nav className="hidden md:flex items-center gap-8 text-sm text-gray-300">
           {navigation.map((item) => (
             <a

@@ -30,7 +30,7 @@ export default function GallerySection() {
 
         {/* Gallery Grid */}
         <div className="mb-12">
-          {/* Primeira linha - 4 imagens iguais */}
+          
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
             {galleryImages.row1.map((image, index) => (
               <div
@@ -47,7 +47,6 @@ export default function GallerySection() {
             ))}
           </div>
 
-          {/* Segunda linha - 3 imagens */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {galleryImages.row2.map((image, index) => (
               <div
