@@ -99,11 +99,12 @@ Essas vulnerabilidades:
 
 ---
 
-## 🎨 Ícones, Imagens e Fontes
+## 🎨 Ícones, Imagens, Fontes e Links:
 
 * Alguns ícones do Figma não estavam disponíveis exatamente nas bibliotecas utilizadas. Nestes casos, foram utilizados **SVGs personalizados** ou alternativas visuais próximas.
 * Nem todas as imagens originais estavam disponíveis; imagens similares foram utilizadas mantendo a proposta visual.
 * A fonte utilizada é uma alternativa próxima à do design original, respeitando hierarquia tipográfica e legibilidade.
+* Os buttons não levam a lugar algum, são apenas estáticos, assim como o menu e login.
 
 Essas decisões foram tomadas visando equilíbrio entre fidelidade visual e viabilidade técnica.
 
